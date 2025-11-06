@@ -96,7 +96,7 @@ a {
 }
 
 .link-arrow {
-  color: #ff3400;
+  color: var(--color-accent);
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
@@ -116,4 +116,23 @@ a {
   .link-arrow {
     font-size: 1.8rem;
   }
+}
+
+/* Badges */
+.badge {
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: #424242;
 }
