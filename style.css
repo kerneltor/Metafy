@@ -32,6 +32,8 @@
   --color-heading: #1b0760;
   --color-body: #918ca4;
   --color-dark-on-light: #424242;
+  --color-border: #ccc;
+  --border-radius: 40px;
 }
 
 *,
@@ -123,7 +125,7 @@ a {
 
 /* Badges */
 .badge {
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   font-weight: bold;
   padding: 0.5rem 2rem;
   text-transform: capitalize;
@@ -171,13 +173,24 @@ a {
 
 /* Icons */
 .icon {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
+  fill: #4585d8;
+}
+
+.icon-container {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 251, 255);
 }
 
 /* Bottons */
 .btn {
-  border-radius: 40px;
+  border-radius: var(--border-radius);
   border: none;
   font-size: 2rem;
   min-width: 250px;
@@ -230,7 +243,7 @@ a {
 
 .btn--outline {
   color: var(--color-heading);
-  border: 3px solid var(--color-heading);
+  border: 2px solid var(--color-heading);
   background-color: transparent;
 }
 
@@ -241,6 +254,45 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Inputs */
+.input {
+  border: 2px solid #ccc;
+  min-width: 300px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: #b9b9b9;
+  font-size: 20px;
+}
+
+.input-group {
+  display: flex;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-border);
+}
+
+.input-group .input {
+  border: none;
+  flex-grow: 1;
+}
+
+.input-group .btn {
+  min-width: fit-content;
+  margin: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 2rem;
   }
 }
