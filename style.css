@@ -309,7 +309,7 @@ a {
 .card {
   border-radius: 8px;
   box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .card__header,
@@ -465,5 +465,21 @@ a {
 
   .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
