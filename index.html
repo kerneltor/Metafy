@@ -6,9 +6,39 @@
     <link rel="stylesheet" href="style.css" />
     <title>Moshify</title>
   </head>
-  <body class="grid grid--1x3 grid--1x2">
-    <div style="height: 10rem; background-color: dodgerblue"></div>
-    <div style="height: 10rem; background-color: yellow"></div>
-    <div style="height: 10rem; background-color: red"></div>
+  <body>
+    <div class="card testimonial grid grid--1x2">
+      <div class="testimonial__image-container">
+        <img
+          class="testimonial__image"
+          src="images/testimonial.jpg"
+          alt="A happy smiling costumer."
+        />
+        <span class="quote-circle">🙶</span>
+      </div>
+      <div class="testimonial__body">
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+            excepturi eum eligendi, ut fugiat laboriosam ratione suscipit, magni
+            ipsum reiciendis alias a distinctio? Quisquam magnam modi laboriosam
+            debitis ex iure.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon">
+                  <use xlink:href="assets/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Revek Mann</h3>
+                <p class="quote__organization">CEO of Mann Works Company</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
   </body>
 </html>
