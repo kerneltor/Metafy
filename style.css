@@ -527,3 +527,41 @@ a {
     font-size: 2.6rem;
   }
 }
+
+/* Callouts */
+.callout {
+  padding: 5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.callout__content > h2 {
+  color: white;
+}
+
+.callout__btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 678px) {
+  .callout {
+    text-align: initial;
+  }
+
+  .callout.grid {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__btn {
+    justify-self: left;
+    margin-left: 3rem;
+  }
+}
