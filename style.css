@@ -178,19 +178,22 @@ a {
 
 /* Icons */
 .icon {
-  width: 5rem;
-  height: 5rem;
-  fill: #4585d8;
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon icon--primary {
+  fill: var(--color-primary);
 }
 
 .icon-container {
-  width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
-  display: flex;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 100%;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(240, 251, 255);
+  background-color: #f3f9fa;
 }
 
 /* Bottons */
@@ -403,4 +406,18 @@ a {
   .plan__price {
     font-size: 1.7rem;
   }
+}
+
+/* Media Object */
+.media {
+  display: flex;
+  /* margin: 3rem; */
+}
+
+.media__image {
+  margin: 2rem 2rem 0 0;
+}
+
+.media__title {
+  margin-top: 0;
 }
