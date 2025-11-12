@@ -196,6 +196,25 @@ a {
   background-color: #f3f9fa;
 }
 
+/* Chevrons */
+.chevron-container {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: #232323;
+}
+
+.chevron {
+  font-size: 4rem;
+  padding: 0;
+  font-weight: lighter;
+  position: absolute;
+  top: -1.94rem;
+  left: 0.3rem;
+  color: white;
+}
+
 /* Bottons */
 .btn {
   border-radius: var(--border-radius);
@@ -485,10 +504,6 @@ a {
 }
 
 /* Testimonial */
-.testimonial {
-  /* padding: 3rem; */
-}
-
 .testimonial__image-container {
   position: relative;
 }
@@ -496,9 +511,6 @@ a {
 .testimonial__image {
   width: 100%;
   border-radius: 8px;
-}
-
-.testimonial__body {
 }
 
 .testimonial__body .quote {
@@ -564,4 +576,42 @@ a {
     justify-self: left;
     margin-left: 3rem;
   }
+}
+
+/* Collapsibles */
+.collapsible {
+  cursor: pointer;
+  user-select: none;
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.15s;
+}
+
+.collapsible__content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.15s, opacity 0.15s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  opacity: 100%;
+  max-height: 100vh;
+  overflow: auto;
 }
