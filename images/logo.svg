@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="209" height="54" viewBox="0 0 209 54">
+<svg xmlns="http://www.w3.org/2000/svg" width="177.65" height="45.9" viewBox="0 0 209 54">
   <defs>
     <style>
       .cls-1 {
@@ -22,7 +22,7 @@
       .cls-3 {
         font-size: 32.498px;
         fill: #fff;
-        font-family: Inter;
+        font-family: 'Roboto' Arial, Helvetica, sans-serif;
         font-weight: 700;
       }
     </style>
