@@ -59,6 +59,7 @@ h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
   text-transform: capitalize;
+  line-height: 1.1;
 }
 
 h1 {
@@ -558,10 +559,10 @@ a {
   align-self: center;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
-}
+} */
 
 @media screen and (min-width: 678px) {
   .callout {
@@ -620,6 +621,8 @@ a {
 .block {
   --padding-bottom: 6rem;
   padding: var(--padding-bottom) 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .block .block__heading {
@@ -636,12 +639,12 @@ a {
 }
 
 .block--skewed-left {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   padding-bottom: calc(--padding-bottom + 3rem);
 }
 
 .block--skewed-right {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   padding-bottom: calc(--padding-bottom + 3rem);
 }
 
@@ -712,5 +715,31 @@ a {
 
   .nav__item {
     border: none;
+  }
+}
+
+/* Heros */
+.hero {
+  padding-top: 0;
+}
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__content > .btn {
+  display: inline-block;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    padding-top: 20rem;
   }
 }
