@@ -127,10 +127,10 @@ a {
 /* Badges */
 .badge {
   border-radius: var(--border-radius);
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 0.5rem 2rem;
-  text-transform: capitalize;
   white-space: nowrap;
+  max-height: fit-content;
 }
 
 .badge--primary {
@@ -183,8 +183,12 @@ a {
   height: 4rem;
 }
 
-.icon icon--primary {
+.icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -222,6 +226,7 @@ a {
   border: none;
   font-size: 2rem;
   min-width: 250px;
+  outline: 0;
   padding: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -280,6 +285,13 @@ a {
   color: white;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.8rem;
@@ -289,9 +301,8 @@ a {
 /* Inputs */
 .input {
   border: 2px solid #ccc;
-  min-width: 300px;
   border-radius: var(--border-radius);
-  padding: 10px;
+  padding: 1.5rem 1rem;
 }
 
 .input:focus {
@@ -312,6 +323,8 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
+  padding: 2rem;
+  min-width: 0;
 }
 
 .input-group .btn {
@@ -414,7 +427,7 @@ a {
   right: 4rem;
 }
 
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
   }
@@ -559,11 +572,6 @@ a {
   align-self: center;
 }
 
-/* .container {
-  display: flex;
-  justify-content: center;
-} */
-
 @media screen and (min-width: 678px) {
   .callout {
     text-align: initial;
@@ -621,8 +629,6 @@ a {
 .block {
   --padding-bottom: 6rem;
   padding: var(--padding-bottom) 2rem;
-  display: flex;
-  justify-content: center;
 }
 
 .block .block__heading {
@@ -654,8 +660,10 @@ a {
 
 .container {
   max-width: 1140px;
+  margin: 0 auto;
 }
 
+/* Navbar */
 .nav {
   background-color: #000;
   display: flex;
@@ -741,5 +749,41 @@ a {
   .hero__content {
     text-align: left;
     padding-top: 20rem;
+  }
+}
+
+/* Domains Blocks */
+.block-domain {
+}
+
+.block-domain .block__heading {
+  margin-bottom: 2rem;
+}
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: none;
+  max-width: 670px;
+  margin: 4rem auto;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .block-domain__prices {
+    grid-template-columns: 1fr 1fr;
   }
 }
