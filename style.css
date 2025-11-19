@@ -372,7 +372,7 @@ a {
 
 /* Plans */
 .plan {
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 2rem 0rem;
 }
 
@@ -424,7 +424,7 @@ a {
   position: absolute;
   width: 4.5rem;
   top: -0.3rem;
-  right: 4rem;
+  right: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
