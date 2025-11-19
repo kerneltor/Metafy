@@ -220,7 +220,7 @@ a {
   color: white;
 }
 
-/* Bottons */
+/* Buttons */
 .btn {
   border-radius: var(--border-radius);
   border: none;
@@ -372,8 +372,8 @@ a {
 
 /* Plans */
 .plan {
-  width: 40rem;
-  margin: 5rem;
+  max-width: 40rem;
+  margin: 2rem 0rem;
 }
 
 .card--primary .plan__name {
@@ -412,7 +412,7 @@ a {
 
 .plan .btn {
   margin-top: 3rem;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .plan--popular {
@@ -753,9 +753,6 @@ a {
 }
 
 /* Domains Blocks */
-.block-domain {
-}
-
 .block-domain .block__heading {
   margin-bottom: 2rem;
 }
@@ -785,5 +782,36 @@ a {
 @media screen and (max-width: 499px) {
   .block-domain__prices {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Plan Containers */
+.container-plans {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-plans {
+    flex-direction: row;
+  }
+
+  .plan {
+    margin: 1rem 2rem;
+    --initial-scale: 1;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .container-plans .plan--popular {
+    --initial-scale: 1.1;
+  }
+
+  .container-plans .plan--popular {
+    transform: scale(var(--initial-scale));
+  }
+
+  .container-plans .plan:hover {
+    transform: scale(calc(var(--initial-scale) + 0.05));
   }
 }
