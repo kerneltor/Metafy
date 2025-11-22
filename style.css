@@ -769,7 +769,7 @@ a {
   display: inline-block;
 }
 
-.hero__img {
+.content__img {
   width: 100%;
 }
 
@@ -811,4 +811,21 @@ a {
   .block-domain__prices {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* Features */
+.feature__heading {
+  margin-top: 2rem;
+}
+
+.grid.feature {
+  gap: 3rem;
+}
+
+.container.feature {
+  margin: 2rem auto 6rem auto;
+}
+
+.feature:nth-of-type(even) .feature__content {
+  order: 2;
 }
