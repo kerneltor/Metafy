@@ -211,10 +211,10 @@ a {
 .chevron {
   font-size: 4rem;
   padding: 0;
-  font-weight: lighter;
+  font-weight: 600;
   position: absolute;
-  top: -1.94rem;
-  left: 0.3rem;
+  top: -1.26rem;
+  left: 1.1rem;
   color: white;
 }
 
@@ -561,7 +561,7 @@ a {
 }
 
 .testimonial__image-container {
-  margin: 4rem;
+  margin: 4.5rem;
 }
 
 .testimonial__image {
@@ -660,7 +660,6 @@ a {
 }
 
 .collapsible__chevron {
-  transform: rotate(-90deg);
   transition: transform 0.15s;
 }
 
@@ -674,7 +673,7 @@ a {
 }
 
 .collapsible--expanded .collapsible__chevron {
-  transform: rotate(0);
+  transform: rotate(90deg);
 }
 
 .collapsible--expanded .collapsible__content,
