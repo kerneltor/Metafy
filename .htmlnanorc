@@ -1,0 +1,6 @@
+{
+  "minifySvg": false,
+  "minifyCss": false,
+  "removeUnusedCss": false,
+  "removeEmptyElements": false
+}
