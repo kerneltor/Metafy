@@ -10,6 +10,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.24.0",
   "devDependencies": {
+    "@parcel/packager-raw-url": "2.16.1",
+    "@parcel/transformer-webmanifest": "2.16.1",
     "parcel": "^2.16.1"
   }
 }

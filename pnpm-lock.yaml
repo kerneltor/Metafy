@@ -8,6 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@parcel/packager-raw-url':
+        specifier: 2.16.1
+        version: 2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))
+      '@parcel/transformer-webmanifest':
+        specifier: 2.16.1
+        version: 2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))
       parcel:
         specifier: ^2.16.1
         version: 2.16.1(@swc/helpers@0.5.17)
@@ -193,6 +199,10 @@ packages:
     resolution: {integrity: sha512-jTxUhGVqZdierdjeGCJiuVBSBU8iVqp3A0BT/RCpcB0YYY3dymDHTQrAFw8h2kJ0ZcfQEr6BeFIU4RBTuM1xow==}
     engines: {node: '>= 16.0.0', parcel: ^2.16.1}
 
+  '@parcel/packager-raw-url@2.16.1':
+    resolution: {integrity: sha512-WpLNS32g4UNMiJz1Jd5mpFpppgFPbrL+dSNDzocQi2FOMUd9opsWdA2JgFD2NIi+Wt3RN5MLYO4LzqHIR9JOtw==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.1}
+
   '@parcel/packager-raw@2.16.1':
     resolution: {integrity: sha512-EYTGl4uKGu0HVFlCZtUcwo+aNr8/9BiXZyY1crd4SRF1cioKYpgLZKv31z1uNiaDrTxIRH8hWNnjPWAxj382NA==}
     engines: {node: '>= 16.0.0', parcel: ^2.16.1}
@@ -357,6 +367,10 @@ packages:
   '@parcel/transformer-svg@2.16.1':
     resolution: {integrity: sha512-OBB0kDjDAAgNzcVqxo/igd+iQL3EDbo8C36JzvH07zR72OXErAdJhTdgtfRq4fqFtMyLyBLT/s3Z37c1GzLoCQ==}
     engines: {node: '>= 16.0.0', parcel: ^2.16.1}
+
+  '@parcel/transformer-webmanifest@2.16.1':
+    resolution: {integrity: sha512-5PWEpNz9DC6hqOkrSZ3WhtjjogyLcNrr05tshIay8sAwo68z8/6vth9iCuFbB7DEfpBFkPJ/0KpitE9qpT0K2A==}
+    engines: {parcel: ^2.16.1}
 
   '@parcel/types-internal@2.16.1':
     resolution: {integrity: sha512-HVCHm0uFyJMsu30bAfm/pd0RNsXRWX0mUXaDHzGJRZ2Yer53JA6elRwkgrPz1KosBA+OuNU/G8atXfCxPMXdKw==}
@@ -1126,6 +1140,14 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
+  '@parcel/packager-raw-url@2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))':
+    dependencies:
+      '@parcel/plugin': 2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))
+      '@parcel/utils': 2.16.1
+    transitivePeerDependencies:
+      - '@parcel/core'
+      - napi-wasm
+
   '@parcel/packager-raw@2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))':
     dependencies:
       '@parcel/plugin': 2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))
@@ -1401,6 +1423,16 @@ snapshots:
       '@parcel/diagnostic': 2.16.1
       '@parcel/plugin': 2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))
       '@parcel/rust': 2.16.1
+    transitivePeerDependencies:
+      - '@parcel/core'
+      - napi-wasm
+
+  '@parcel/transformer-webmanifest@2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))':
+    dependencies:
+      '@mischnic/json-sourcemap': 0.1.1
+      '@parcel/diagnostic': 2.16.1
+      '@parcel/plugin': 2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))
+      '@parcel/utils': 2.16.1
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
