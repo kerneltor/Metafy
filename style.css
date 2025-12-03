@@ -339,7 +339,7 @@ a {
 /* Cards */
 .card {
   border-radius: 8px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
+  box-shadow: 0 0 30px 4px #ccc;
   overflow: clip;
 }
 
