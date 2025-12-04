@@ -490,7 +490,7 @@ a {
 
 /* Quotes */
 .quote {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--color-dark-on-light);
   letter-spacing: 0.1rem;
 }
